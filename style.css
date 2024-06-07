@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.25rem;
+  background-color: black;
+  color: #fff;
+}
+.main-heading {
+  font-size: 1.5rem;
+}
+
+.legend {
+  height: 4rem;
+  width: 22rem;
+  background-color: gray;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2.5rem 0.5rem;
+}
+
+.legend-seat-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.movies-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.movie {
+  padding: 0.25rem;
+}
+
+.screen-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.screen {
+  height: 6rem;
+  width: 24rem;
+  background-color: whitesmoke;
+  border-radius: 18px;
+}
+
+.seats-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.seat-count,
+.amount {
+  font-weight: 900;
+}
+
+.seat {
+  width: 2rem;
+  height: 2rem;
+  background-color: green;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  transition: all 0.5s ease-in-out;
+}
+
+.seats-container .seat:hover {
+  cursor: pointer;
+  margin-top: -3px;
+}
+
+.seat.selected {
+  background-color: blue;
+}
+
+.seat.occupied {
+  background-color: red;
+}
+
+.seat.occupied:hover {
+  cursor: default;
+  margin-top: 0px;
+}
